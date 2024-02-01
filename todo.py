@@ -14,7 +14,7 @@ while(1):
     elif(c==3):
         print("To-Do List: ")
         with open("task.txt","r")as f:
-            t1=f.read().splitlines()
+            t1=f.read()
             for item in t1:
                 if item in tasks:
                     print("Alreadly Exists")
